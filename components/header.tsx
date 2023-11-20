@@ -7,7 +7,8 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 export default function Header() {
-	const { activeSection, setActiveSection } = useActiveSectionContext()
+	const { activeSection, setActiveSection, setTimeOfLastClick } =
+		useActiveSectionContext()
 
 	return (
 		<header className='z-[999] relative'>
@@ -30,7 +31,10 @@ export default function Header() {
 									{ 'text-gray-300': activeSection === link.name }
 								)}
 								href={link.hash}
-								onClick={() => setActiveSection(link.name)}>
+								onClick={() => {
+									setActiveSection(link.name)
+									setTimeOfLastClick(Date.now())
+								}}>
 								{link.name}
 
 								{link.name === activeSection && (
