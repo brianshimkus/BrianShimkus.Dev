@@ -21,9 +21,14 @@ export default function Experience() {
 					<React.Fragment key={index}>
 						<VerticalTimelineElement
 							className='vertical-timeline-element--work'
-							contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+							contentStyle={{
+								background: 'rgb(139 92 246)',
+								color: '#fff',
+								padding: '1.3rem 2rem',
+								visibility: 'visible',
+							}}
 							contentArrowStyle={{
-								borderRight: '7px solid  rgb(33, 150, 243)',
+								borderRight: '7px solid  rgb(139 92 246)',
 							}}
 							date={item.date}
 							icon={item.icon}>
