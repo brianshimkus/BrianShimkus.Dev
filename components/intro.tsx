@@ -29,11 +29,11 @@ export default function Intro() {
 					<Image
 						src='https://avatars.githubusercontent.com/u/4394337?v=4'
 						alt='Brian portrait'
-						width='192'
-						height='192'
+						width='250'
+						height='250'
 						quality='95'
 						priority={true}
-						className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl'
+						className='h-48 w-48 rounded-full object-cover border-[0.35rem] border-white shadow-xl'
 					/>
 				</motion.div>
 			</div>
@@ -43,8 +43,7 @@ export default function Intro() {
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}>
 				<span className='font-bold'>Hello, I'm Brian.</span> I'm a{' '}
-				<span className='font-bold'>full-stack developer</span> with{' '}
-				<span className='font-bold'>10 years</span> of experience.
+				<span className='font-bold'>full-stack developer</span>.
 			</motion.h1>
 
 			<motion.div
@@ -75,14 +74,14 @@ export default function Intro() {
 
 				<a
 					className='bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
-					href='https://linkedin.com'
+					href='https://www.linkedin.com/in/brianshimkus1/'
 					target='_blank'>
 					<BsLinkedin />
 				</a>
 
 				<a
 					className='bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
-					href='https://github.com'
+					href='https://github.com/brianshimkus'
 					target='_blank'>
 					<FaGithubSquare />
 				</a>
