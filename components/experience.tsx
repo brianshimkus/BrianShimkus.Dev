@@ -32,9 +32,17 @@ export default function Experience() {
 							}}
 							date={item.date}
 							icon={item.icon}>
-							<h3>{item.title}</h3>
-							<p>{item.location}</p>
-							<p>{item.description}</p>
+							<h3 className='font-bold text-xl'>{item.title}</h3>
+							<h3 className='font-bold text-slate-900 text-lg'>
+								{item.company}
+							</h3>
+							<ul className='ml-4'>
+								{item.descriptionPoints.map((point, index) => (
+									<li key={index} className='list-disc list-outside mt-4'>
+										{point.descriptionPoint}
+									</li>
+								))}
+							</ul>
 						</VerticalTimelineElement>
 					</React.Fragment>
 				))}
